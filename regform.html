@@ -5,24 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .kit{
+            background-color: azure;
+            background-size: cover;        
+            background-repeat: no-repeat;  
+            background-position: center;
+        }
         header{
-            background-color: #46c86f;   
-    color: white;  
-    font-size: 80px;             
-    font-family: Arial, sans-serif;
-    padding: 10px;     
-    letter-spacing: 10px;           
-    border-radius: 8px;         
-    width: 100%;
-    margin: 20px auto;    
+            background-color:blueviolet; 
+           color: white;  
+          font-size: 80px;             
+          font-family: red sans-serif;
+          padding: 10px;   
+          letter-spacing: 10px;           
+          border-radius: 8px;         
+          width: 100%;
+          margin: 20px auto;    
+          text-shadow: 2px 2px 5px hsl(202, 85%, 8%); 
             
+        }
+        .hello{
+            background-color: beige;
+            color: black
+            box-shadow:hsl(252, 85%, 28%);
+            border-radius: 2px; border: 3px black;
+            input{
+                  box-shadow: 2px 2px 5px #fe3434;
+                   }  
+            select{
+                box-shadow: 2px 2px 5px #fe3434;
+            }    
+            textarea{
+                    box-shadow: 2px 2px 5px #fe3434;
+            }  
+            button{
+                box-shadow: 2px,2px,5px #46c86f
+            } 
+
         }
     </style>
 </head>
-<body>
+<body class="kit">
     <header>This Is My First Project </header>
     <h1> <b>Registration form</b></h1>
     <form>
+        <div class="hello">
         <legend><em><b> Personal Details</b></em></legend>
         <fieldset>
             <label>Name:</label>
@@ -88,6 +115,7 @@
         <br><br>
         <legend>Feedback</legend>
         <textarea rows="5" cols="30"></textarea>
+        </div>
 
     </form>
     
